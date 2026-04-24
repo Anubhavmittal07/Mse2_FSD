@@ -6,7 +6,11 @@ Solution : Updated the comparison operators it was strict previously to ensure p
 
 Bug 2 — App.js | Hard Symptom: Clicking any Category button (Electronics, Footwear, etc.) has no effect — the product grid never changes.
 
+Soln : Added category to the useMemo array in App.
+
 Bug 3 — App.js | Easy Symptom: Clicking the 🗑️ delete button in the cart removes all other items and keeps only the one you tried to delete.
+
+Soln : Changed the filter condition to items id as i.id!== id so it will keep all other item except the one which was clicked deleted.
 
 Bug 4 — App.js | Medium Symptom: The cart badge on the header button always shows nothing (or 0) even after adding multiple items.
 
