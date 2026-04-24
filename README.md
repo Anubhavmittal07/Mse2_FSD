@@ -14,12 +14,22 @@ Soln : Changed the filter condition to items id as i.id!== id so it will keep al
 
 Bug 4 — App.js | Medium Symptom: The cart badge on the header button always shows nothing (or 0) even after adding multiple items.
 
+Soln: Changed Item count to item quantity in reduce function
+
 Bug 5 — App.js | Hard Symptom: The "+ Add to Cart" button never turns green and never says "✓ Added", even after a product is in the cart.
+
+Soln : The previous cart id set was undefined updated its id
 
 Bug 6 — Cart.jsx | Medium Symptom: The cart total always shows ₹0, no matter how many items or quantities are added.
 
+Soln: Updated the calculation in the cart.
+
 Bug 7 — Cart.jsx | Medium Symptom: The − (decrease) button in the cart is never disabled, allowing quantity to drop to 0 (and below), breaking the total.
 
+Soln: Changed the condition of disabling after quantity less than 1.
+
 Bug 8 — Filters.jsx | Easy Symptom: The sort order is inverted — selecting "Price: Low to High" sorts highest-priced items first, and vice versa.
+
+Soln: Swapped value for high to low to low to high
 
 Bug 9 — ProductCard.jsx | Easy Symptom: A product rated 4.5 shows only 4 filled stars instead of 5. All half-star ratings are rounded down.
